@@ -1,1 +1,1 @@
-"# Projeto Final de Circuitos L¢gicos" 
+# Projeto Final de Circuitos LÃ³gicos 
