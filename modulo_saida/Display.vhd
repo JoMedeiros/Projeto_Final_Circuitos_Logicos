@@ -37,20 +37,15 @@ ARCHITECTURE arch OF Display IS
 	END COMPONENT;
 BEGIN
 
-i0: Display_A PORT MAP (W,X,Y,Z,	A);
-i1: Display_B PORT MAP (W,X,Y,Z,	B);
-i2: Display_C PORT MAP (W,X,Y,Z,	C);
-i3: Display_D PORT MAP (W,X,Y,Z,	D);
-i4: Display_E PORT MAP (W,X,Y,Z,	E);
-i5: Display_F PORT MAP (W,X,Y,Z,	F);
-i6: Display_g PORT MAP (W,X,Y,Z,	G);
+i0: Display_A PORT MAP (NOT W, NOT X, NOT Y, NOT Z,	A);
+i1: Display_B PORT MAP (NOT W, NOT X, NOT Y, NOT Z,	B);
+i2: Display_C PORT MAP (NOT W, NOT X, NOT Y, NOT Z,	C);
+i3: Display_D PORT MAP (NOT W, NOT X, NOT Y, NOT Z,	D);
+i4: Display_E PORT MAP (NOT W, NOT X, NOT Y, NOT Z,	E);
+i5: Display_F PORT MAP (NOT W, NOT X, NOT Y, NOT Z,	F);
+i6: Display_g PORT MAP (NOT W, NOT X, NOT Y, NOT Z,	G);
 	
 END arch;
-
-
-
-
-
 
 
 

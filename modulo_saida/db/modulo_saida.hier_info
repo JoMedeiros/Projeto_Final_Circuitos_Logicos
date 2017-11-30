@@ -1,0 +1,728 @@
+|modulo_saida
+clock => saida_LED[0]~reg0.CLK
+clock => saida_LED[1]~reg0.CLK
+clock => saida_LED[2]~reg0.CLK
+clock => saida_LED[3]~reg0.CLK
+clock => saida_LED[4]~reg0.CLK
+clock => saida_LED[5]~reg0.CLK
+clock => saida_LED[6]~reg0.CLK
+clock => saida_LED[7]~reg0.CLK
+clock => saida_LED[8]~reg0.CLK
+clock => saida_LED[9]~reg0.CLK
+clock => saida_LED[10]~reg0.CLK
+clock => saida_LED[11]~reg0.CLK
+clock => saida_LED[12]~reg0.CLK
+clock => saida_LED[13]~reg0.CLK
+clock => saida_LED[14]~reg0.CLK
+clock => saida_LED[15]~reg0.CLK
+clock => LED_Alg~reg0.CLK
+end_alg => saida_LED.OUTPUTSELECT
+end_alg => saida_LED[1]~reg0.ENA
+end_alg => saida_LED[2]~reg0.ENA
+end_alg => saida_LED[3]~reg0.ENA
+end_alg => saida_LED[4]~reg0.ENA
+end_alg => saida_LED[5]~reg0.ENA
+end_alg => saida_LED[6]~reg0.ENA
+end_alg => saida_LED[7]~reg0.ENA
+end_alg => saida_LED[8]~reg0.ENA
+end_alg => saida_LED[9]~reg0.ENA
+end_alg => saida_LED[10]~reg0.ENA
+end_alg => saida_LED[11]~reg0.ENA
+end_alg => saida_LED[12]~reg0.ENA
+end_alg => saida_LED[13]~reg0.ENA
+end_alg => saida_LED[14]~reg0.ENA
+end_alg => saida_LED[15]~reg0.ENA
+end_alg => LED_Alg~reg0.ENA
+result[0] => saida_LED.DATAB
+result[0] => Display:dS3.Z
+result[1] => Display:dS3.Y
+result[1] => saida_LED[1]~reg0.DATAIN
+result[2] => Display:dS3.X
+result[2] => saida_LED[2]~reg0.DATAIN
+result[3] => Display:dS3.W
+result[3] => saida_LED[3]~reg0.DATAIN
+result[4] => Display:dS2.Z
+result[4] => saida_LED[4]~reg0.DATAIN
+result[5] => Display:dS2.Y
+result[5] => saida_LED[5]~reg0.DATAIN
+result[6] => Display:dS2.X
+result[6] => saida_LED[6]~reg0.DATAIN
+result[7] => Display:dS2.W
+result[7] => saida_LED[7]~reg0.DATAIN
+result[8] => Display:dS1.Z
+result[8] => saida_LED[8]~reg0.DATAIN
+result[9] => Display:dS1.Y
+result[9] => saida_LED[9]~reg0.DATAIN
+result[10] => Display:dS1.X
+result[10] => saida_LED[10]~reg0.DATAIN
+result[11] => Display:dS1.W
+result[11] => saida_LED[11]~reg0.DATAIN
+result[12] => Display:dS0.Z
+result[12] => saida_LED[12]~reg0.DATAIN
+result[13] => Display:dS0.Y
+result[13] => saida_LED[13]~reg0.DATAIN
+result[14] => Display:dS0.X
+result[14] => saida_LED[14]~reg0.DATAIN
+result[15] => Display:dS0.W
+result[15] => saida_LED[15]~reg0.DATAIN
+t_alg[0] => Equal0.IN1
+t_alg[1] => Equal0.IN0
+D1[0] <= Display:dS0.G
+D1[1] <= Display:dS0.F
+D1[2] <= Display:dS0.E
+D1[3] <= Display:dS0.D
+D1[4] <= Display:dS0.C
+D1[5] <= Display:dS0.B
+D1[6] <= Display:dS0.A
+D2[0] <= Display:dS1.G
+D2[1] <= Display:dS1.F
+D2[2] <= Display:dS1.E
+D2[3] <= Display:dS1.D
+D2[4] <= Display:dS1.C
+D2[5] <= Display:dS1.B
+D2[6] <= Display:dS1.A
+D3[0] <= Display:dS2.G
+D3[1] <= Display:dS2.F
+D3[2] <= Display:dS2.E
+D3[3] <= Display:dS2.D
+D3[4] <= Display:dS2.C
+D3[5] <= Display:dS2.B
+D3[6] <= Display:dS2.A
+D4[0] <= Display:dS3.G
+D4[1] <= Display:dS3.F
+D4[2] <= Display:dS3.E
+D4[3] <= Display:dS3.D
+D4[4] <= Display:dS3.C
+D4[5] <= Display:dS3.B
+D4[6] <= Display:dS3.A
+saida_LED[0] <= saida_LED[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[1] <= saida_LED[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[2] <= saida_LED[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[3] <= saida_LED[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[4] <= saida_LED[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[5] <= saida_LED[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[6] <= saida_LED[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[7] <= saida_LED[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[8] <= saida_LED[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[9] <= saida_LED[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[10] <= saida_LED[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[11] <= saida_LED[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[12] <= saida_LED[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[13] <= saida_LED[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[14] <= saida_LED[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida_LED[15] <= saida_LED[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED_Alg <= LED_Alg~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS0
+W => Display_A:i0.W
+W => Display_B:i1.W
+W => Display_C:i2.W
+W => Display_D:i3.W
+W => Display_E:i4.W
+W => Display_F:i5.W
+W => Display_G:i6.W
+X => Display_A:i0.X
+X => Display_B:i1.X
+X => Display_C:i2.X
+X => Display_D:i3.X
+X => Display_E:i4.X
+X => Display_F:i5.X
+X => Display_G:i6.X
+Y => Display_A:i0.Y
+Y => Display_B:i1.Y
+Y => Display_C:i2.Y
+Y => Display_D:i3.Y
+Y => Display_E:i4.Y
+Y => Display_F:i5.Y
+Y => Display_G:i6.Y
+Z => Display_A:i0.Z
+Z => Display_B:i1.Z
+Z => Display_C:i2.Z
+Z => Display_D:i3.Z
+Z => Display_E:i4.Z
+Z => Display_F:i5.Z
+Z => Display_G:i6.Z
+A <= Display_A:i0.A
+B <= Display_B:i1.B
+C <= Display_C:i2.C
+D <= Display_D:i3.D
+E <= Display_E:i4.E
+F <= Display_F:i5.F
+G <= Display_G:i6.G
+
+
+|modulo_saida|Display:dS0|Display_A:i0
+W => aux_A[0].IN0
+W => aux_A.IN0
+W => aux_A[2].IN0
+W => aux_A.IN0
+W => aux_A.IN0
+X => aux_A[3].IN0
+X => aux_A.IN1
+X => aux_A.IN1
+X => aux_A.IN1
+Y => aux_A[1].IN0
+Y => aux_A[2].IN1
+Y => aux_A[3].IN1
+Y => aux_A[6].IN1
+Z => aux_A[4].IN1
+Z => aux_A[0].IN1
+Z => aux_A[1].IN1
+Z => aux_A[5].IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS0|Display_B:i1
+W => aux_B.IN0
+W => aux_B[0].IN0
+W => aux_B.IN0
+W => aux_B.IN0
+X => aux_B[0].IN1
+X => aux_B[1].IN0
+X => aux_B.IN0
+Y => aux_B.IN1
+Y => aux_B.IN1
+Y => aux_B[1].IN1
+Y => aux_B.IN1
+Y => aux_B.IN1
+Z => aux_B[3].IN1
+Z => aux_B[4].IN1
+Z => aux_B[2].IN1
+Z => aux_B[5].IN1
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS0|Display_C:i2
+W => aux_C[1].IN0
+W => aux_C[2].IN0
+W => aux_C[3].IN0
+W => aux_C[4].IN0
+X => aux_C[2].IN1
+X => aux_C[1].IN1
+Y => aux_C[0].IN0
+Y => aux_C[3].IN1
+Z => aux_C[0].IN1
+Z => aux_C[4].IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS0|Display_D:i3
+W => aux_D[0].IN0
+W => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN1
+Y => aux_D.IN1
+Y => aux_D.IN1
+Y => aux_D[0].IN1
+Y => aux_D.IN1
+Z => aux_D[1].IN1
+Z => aux_D[4].IN1
+Z => aux_D[2].IN1
+Z => aux_D[3].IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS0|Display_E:i4
+W => aux_E[0].IN0
+W => aux_E[2].IN0
+X => aux_E[0].IN1
+X => aux_E[1].IN0
+Y => aux_E[2].IN1
+Y => aux_E[3].IN0
+Z => aux_E[1].IN1
+Z => aux_E[3].IN1
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS0|Display_F:i5
+W => aux_F[1].IN0
+W => aux_F[4].IN0
+W => aux_F.IN0
+X => aux_F.IN1
+X => aux_F[3].IN0
+X => aux_F[1].IN1
+Y => aux_F[4].IN1
+Y => aux_F[0].IN0
+Y => aux_F[2].IN1
+Z => aux_F[0].IN1
+Z => aux_F[3].IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS0|Display_G:i6
+W => aux_G[0].IN0
+W => aux_G[2].IN0
+W => aux_G.IN0
+X => aux_G.IN1
+X => aux_G[0].IN1
+X => aux_G[4].IN0
+Y => aux_G[1].IN0
+Y => aux_G[4].IN1
+Y => aux_G[3].IN1
+Z => aux_G[2].IN1
+Z => aux_G[1].IN1
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS1
+W => Display_A:i0.W
+W => Display_B:i1.W
+W => Display_C:i2.W
+W => Display_D:i3.W
+W => Display_E:i4.W
+W => Display_F:i5.W
+W => Display_G:i6.W
+X => Display_A:i0.X
+X => Display_B:i1.X
+X => Display_C:i2.X
+X => Display_D:i3.X
+X => Display_E:i4.X
+X => Display_F:i5.X
+X => Display_G:i6.X
+Y => Display_A:i0.Y
+Y => Display_B:i1.Y
+Y => Display_C:i2.Y
+Y => Display_D:i3.Y
+Y => Display_E:i4.Y
+Y => Display_F:i5.Y
+Y => Display_G:i6.Y
+Z => Display_A:i0.Z
+Z => Display_B:i1.Z
+Z => Display_C:i2.Z
+Z => Display_D:i3.Z
+Z => Display_E:i4.Z
+Z => Display_F:i5.Z
+Z => Display_G:i6.Z
+A <= Display_A:i0.A
+B <= Display_B:i1.B
+C <= Display_C:i2.C
+D <= Display_D:i3.D
+E <= Display_E:i4.E
+F <= Display_F:i5.F
+G <= Display_G:i6.G
+
+
+|modulo_saida|Display:dS1|Display_A:i0
+W => aux_A[0].IN0
+W => aux_A.IN0
+W => aux_A[2].IN0
+W => aux_A.IN0
+W => aux_A.IN0
+X => aux_A[3].IN0
+X => aux_A.IN1
+X => aux_A.IN1
+X => aux_A.IN1
+Y => aux_A[1].IN0
+Y => aux_A[2].IN1
+Y => aux_A[3].IN1
+Y => aux_A[6].IN1
+Z => aux_A[4].IN1
+Z => aux_A[0].IN1
+Z => aux_A[1].IN1
+Z => aux_A[5].IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS1|Display_B:i1
+W => aux_B.IN0
+W => aux_B[0].IN0
+W => aux_B.IN0
+W => aux_B.IN0
+X => aux_B[0].IN1
+X => aux_B[1].IN0
+X => aux_B.IN0
+Y => aux_B.IN1
+Y => aux_B.IN1
+Y => aux_B[1].IN1
+Y => aux_B.IN1
+Y => aux_B.IN1
+Z => aux_B[3].IN1
+Z => aux_B[4].IN1
+Z => aux_B[2].IN1
+Z => aux_B[5].IN1
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS1|Display_C:i2
+W => aux_C[1].IN0
+W => aux_C[2].IN0
+W => aux_C[3].IN0
+W => aux_C[4].IN0
+X => aux_C[2].IN1
+X => aux_C[1].IN1
+Y => aux_C[0].IN0
+Y => aux_C[3].IN1
+Z => aux_C[0].IN1
+Z => aux_C[4].IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS1|Display_D:i3
+W => aux_D[0].IN0
+W => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN1
+Y => aux_D.IN1
+Y => aux_D.IN1
+Y => aux_D[0].IN1
+Y => aux_D.IN1
+Z => aux_D[1].IN1
+Z => aux_D[4].IN1
+Z => aux_D[2].IN1
+Z => aux_D[3].IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS1|Display_E:i4
+W => aux_E[0].IN0
+W => aux_E[2].IN0
+X => aux_E[0].IN1
+X => aux_E[1].IN0
+Y => aux_E[2].IN1
+Y => aux_E[3].IN0
+Z => aux_E[1].IN1
+Z => aux_E[3].IN1
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS1|Display_F:i5
+W => aux_F[1].IN0
+W => aux_F[4].IN0
+W => aux_F.IN0
+X => aux_F.IN1
+X => aux_F[3].IN0
+X => aux_F[1].IN1
+Y => aux_F[4].IN1
+Y => aux_F[0].IN0
+Y => aux_F[2].IN1
+Z => aux_F[0].IN1
+Z => aux_F[3].IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS1|Display_G:i6
+W => aux_G[0].IN0
+W => aux_G[2].IN0
+W => aux_G.IN0
+X => aux_G.IN1
+X => aux_G[0].IN1
+X => aux_G[4].IN0
+Y => aux_G[1].IN0
+Y => aux_G[4].IN1
+Y => aux_G[3].IN1
+Z => aux_G[2].IN1
+Z => aux_G[1].IN1
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS2
+W => Display_A:i0.W
+W => Display_B:i1.W
+W => Display_C:i2.W
+W => Display_D:i3.W
+W => Display_E:i4.W
+W => Display_F:i5.W
+W => Display_G:i6.W
+X => Display_A:i0.X
+X => Display_B:i1.X
+X => Display_C:i2.X
+X => Display_D:i3.X
+X => Display_E:i4.X
+X => Display_F:i5.X
+X => Display_G:i6.X
+Y => Display_A:i0.Y
+Y => Display_B:i1.Y
+Y => Display_C:i2.Y
+Y => Display_D:i3.Y
+Y => Display_E:i4.Y
+Y => Display_F:i5.Y
+Y => Display_G:i6.Y
+Z => Display_A:i0.Z
+Z => Display_B:i1.Z
+Z => Display_C:i2.Z
+Z => Display_D:i3.Z
+Z => Display_E:i4.Z
+Z => Display_F:i5.Z
+Z => Display_G:i6.Z
+A <= Display_A:i0.A
+B <= Display_B:i1.B
+C <= Display_C:i2.C
+D <= Display_D:i3.D
+E <= Display_E:i4.E
+F <= Display_F:i5.F
+G <= Display_G:i6.G
+
+
+|modulo_saida|Display:dS2|Display_A:i0
+W => aux_A[0].IN0
+W => aux_A.IN0
+W => aux_A[2].IN0
+W => aux_A.IN0
+W => aux_A.IN0
+X => aux_A[3].IN0
+X => aux_A.IN1
+X => aux_A.IN1
+X => aux_A.IN1
+Y => aux_A[1].IN0
+Y => aux_A[2].IN1
+Y => aux_A[3].IN1
+Y => aux_A[6].IN1
+Z => aux_A[4].IN1
+Z => aux_A[0].IN1
+Z => aux_A[1].IN1
+Z => aux_A[5].IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS2|Display_B:i1
+W => aux_B.IN0
+W => aux_B[0].IN0
+W => aux_B.IN0
+W => aux_B.IN0
+X => aux_B[0].IN1
+X => aux_B[1].IN0
+X => aux_B.IN0
+Y => aux_B.IN1
+Y => aux_B.IN1
+Y => aux_B[1].IN1
+Y => aux_B.IN1
+Y => aux_B.IN1
+Z => aux_B[3].IN1
+Z => aux_B[4].IN1
+Z => aux_B[2].IN1
+Z => aux_B[5].IN1
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS2|Display_C:i2
+W => aux_C[1].IN0
+W => aux_C[2].IN0
+W => aux_C[3].IN0
+W => aux_C[4].IN0
+X => aux_C[2].IN1
+X => aux_C[1].IN1
+Y => aux_C[0].IN0
+Y => aux_C[3].IN1
+Z => aux_C[0].IN1
+Z => aux_C[4].IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS2|Display_D:i3
+W => aux_D[0].IN0
+W => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN1
+Y => aux_D.IN1
+Y => aux_D.IN1
+Y => aux_D[0].IN1
+Y => aux_D.IN1
+Z => aux_D[1].IN1
+Z => aux_D[4].IN1
+Z => aux_D[2].IN1
+Z => aux_D[3].IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS2|Display_E:i4
+W => aux_E[0].IN0
+W => aux_E[2].IN0
+X => aux_E[0].IN1
+X => aux_E[1].IN0
+Y => aux_E[2].IN1
+Y => aux_E[3].IN0
+Z => aux_E[1].IN1
+Z => aux_E[3].IN1
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS2|Display_F:i5
+W => aux_F[1].IN0
+W => aux_F[4].IN0
+W => aux_F.IN0
+X => aux_F.IN1
+X => aux_F[3].IN0
+X => aux_F[1].IN1
+Y => aux_F[4].IN1
+Y => aux_F[0].IN0
+Y => aux_F[2].IN1
+Z => aux_F[0].IN1
+Z => aux_F[3].IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS2|Display_G:i6
+W => aux_G[0].IN0
+W => aux_G[2].IN0
+W => aux_G.IN0
+X => aux_G.IN1
+X => aux_G[0].IN1
+X => aux_G[4].IN0
+Y => aux_G[1].IN0
+Y => aux_G[4].IN1
+Y => aux_G[3].IN1
+Z => aux_G[2].IN1
+Z => aux_G[1].IN1
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS3
+W => Display_A:i0.W
+W => Display_B:i1.W
+W => Display_C:i2.W
+W => Display_D:i3.W
+W => Display_E:i4.W
+W => Display_F:i5.W
+W => Display_G:i6.W
+X => Display_A:i0.X
+X => Display_B:i1.X
+X => Display_C:i2.X
+X => Display_D:i3.X
+X => Display_E:i4.X
+X => Display_F:i5.X
+X => Display_G:i6.X
+Y => Display_A:i0.Y
+Y => Display_B:i1.Y
+Y => Display_C:i2.Y
+Y => Display_D:i3.Y
+Y => Display_E:i4.Y
+Y => Display_F:i5.Y
+Y => Display_G:i6.Y
+Z => Display_A:i0.Z
+Z => Display_B:i1.Z
+Z => Display_C:i2.Z
+Z => Display_D:i3.Z
+Z => Display_E:i4.Z
+Z => Display_F:i5.Z
+Z => Display_G:i6.Z
+A <= Display_A:i0.A
+B <= Display_B:i1.B
+C <= Display_C:i2.C
+D <= Display_D:i3.D
+E <= Display_E:i4.E
+F <= Display_F:i5.F
+G <= Display_G:i6.G
+
+
+|modulo_saida|Display:dS3|Display_A:i0
+W => aux_A[0].IN0
+W => aux_A.IN0
+W => aux_A[2].IN0
+W => aux_A.IN0
+W => aux_A.IN0
+X => aux_A[3].IN0
+X => aux_A.IN1
+X => aux_A.IN1
+X => aux_A.IN1
+Y => aux_A[1].IN0
+Y => aux_A[2].IN1
+Y => aux_A[3].IN1
+Y => aux_A[6].IN1
+Z => aux_A[4].IN1
+Z => aux_A[0].IN1
+Z => aux_A[1].IN1
+Z => aux_A[5].IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS3|Display_B:i1
+W => aux_B.IN0
+W => aux_B[0].IN0
+W => aux_B.IN0
+W => aux_B.IN0
+X => aux_B[0].IN1
+X => aux_B[1].IN0
+X => aux_B.IN0
+Y => aux_B.IN1
+Y => aux_B.IN1
+Y => aux_B[1].IN1
+Y => aux_B.IN1
+Y => aux_B.IN1
+Z => aux_B[3].IN1
+Z => aux_B[4].IN1
+Z => aux_B[2].IN1
+Z => aux_B[5].IN1
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS3|Display_C:i2
+W => aux_C[1].IN0
+W => aux_C[2].IN0
+W => aux_C[3].IN0
+W => aux_C[4].IN0
+X => aux_C[2].IN1
+X => aux_C[1].IN1
+Y => aux_C[0].IN0
+Y => aux_C[3].IN1
+Z => aux_C[0].IN1
+Z => aux_C[4].IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS3|Display_D:i3
+W => aux_D[0].IN0
+W => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN0
+X => aux_D.IN1
+Y => aux_D.IN1
+Y => aux_D.IN1
+Y => aux_D[0].IN1
+Y => aux_D.IN1
+Z => aux_D[1].IN1
+Z => aux_D[4].IN1
+Z => aux_D[2].IN1
+Z => aux_D[3].IN1
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS3|Display_E:i4
+W => aux_E[0].IN0
+W => aux_E[2].IN0
+X => aux_E[0].IN1
+X => aux_E[1].IN0
+Y => aux_E[2].IN1
+Y => aux_E[3].IN0
+Z => aux_E[1].IN1
+Z => aux_E[3].IN1
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS3|Display_F:i5
+W => aux_F[1].IN0
+W => aux_F[4].IN0
+W => aux_F.IN0
+X => aux_F.IN1
+X => aux_F[3].IN0
+X => aux_F[1].IN1
+Y => aux_F[4].IN1
+Y => aux_F[0].IN0
+Y => aux_F[2].IN1
+Z => aux_F[0].IN1
+Z => aux_F[3].IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|modulo_saida|Display:dS3|Display_G:i6
+W => aux_G[0].IN0
+W => aux_G[2].IN0
+W => aux_G.IN0
+X => aux_G.IN1
+X => aux_G[0].IN1
+X => aux_G[4].IN0
+Y => aux_G[1].IN0
+Y => aux_G[4].IN1
+Y => aux_G[3].IN1
+Z => aux_G[2].IN1
+Z => aux_G[1].IN1
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+

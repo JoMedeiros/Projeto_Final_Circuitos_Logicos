@@ -17,6 +17,6 @@ BEGIN
 	aux_D(3) <= X AND Y AND NOT Z;
 	aux_D(4) <= X AND NOT Y AND Z;
 	
-	D <= aux_D(0) OR aux_D(1) OR aux_D(2) OR aux_D(3) or aux_D(4);
+	D <= NOT (aux_D(0) OR aux_D(1) OR aux_D(2) OR aux_D(3) or aux_D(4));
 
 END arch;

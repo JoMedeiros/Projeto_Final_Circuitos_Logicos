@@ -19,6 +19,6 @@ BEGIN
 	aux_A(5) <= NOT W AND NOT X AND NOT Z;
 	aux_A(6) <= W AND NOT X AND NOT Y;
 
-	A <= aux_A(0) OR aux_A(1) OR aux_A(2) OR aux_A(3) OR aux_A(4) OR aux_A(5) OR aux_A(6);
+	A <= NOT (aux_A(0) OR aux_A(1) OR aux_A(2) OR aux_A(3) OR aux_A(4) OR aux_A(5) OR aux_A(6));
 
 END arch;

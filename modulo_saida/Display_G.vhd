@@ -17,6 +17,6 @@ BEGIN
 	aux_G(3) <= NOT W AND X AND NOT Y;
 	aux_G(4) <= NOT X AND Y;
 	
-	G <= aux_G(0) OR aux_G(1) OR aux_G(2) OR aux_G(3) OR aux_G(4);
+	G <= NOT (aux_G(0) OR aux_G(1) OR aux_G(2) OR aux_G(3) OR aux_G(4));
 
 END arch;

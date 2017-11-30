@@ -18,6 +18,6 @@ BEGIN
 	aux_B(4) <= W AND NOT Y AND Z;
 	aux_B(5) <= NOT X AND Y AND NOT Z;
 	
-	B <= aux_B(0) OR aux_B(1) OR aux_B(2) OR aux_B(3) OR aux_B(4) OR aux_B(5);
+	B <= NOT (aux_B(0) OR aux_B(1) OR aux_B(2) OR aux_B(3) OR aux_B(4) OR aux_B(5));
 
 END arch;

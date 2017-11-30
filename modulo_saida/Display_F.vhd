@@ -17,6 +17,6 @@ BEGIN
 	aux_F(3) <= X AND NOT Z;
 	aux_F(4) <= W AND Y;
 			
-	F <= aux_F(0) OR aux_F(1) OR aux_F(2) OR aux_F(3) OR aux_F(4);
+	F <= NOT (aux_F(0) OR aux_F(1) OR aux_F(2) OR aux_F(3) OR aux_F(4));
 
 END arch;

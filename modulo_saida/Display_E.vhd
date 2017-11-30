@@ -16,6 +16,6 @@ BEGIN
 	aux_E(2) <= W AND Y;
 	aux_E(3) <= Y AND NOT Z;
 	
-	E <= aux_E(0) OR aux_E(1) OR aux_E(2) OR aux_E(3);
+	E <= NOT (aux_E(0) OR aux_E(1) OR aux_E(2) OR aux_E(3));
 
 END arch;

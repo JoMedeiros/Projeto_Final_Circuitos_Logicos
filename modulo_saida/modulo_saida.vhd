@@ -34,12 +34,11 @@ END COMPONENT;
 
 begin
 	-- Precisa criar component registrador
-	reg_cont : PORT MAP ();
+	-- reg_cont : PORT MAP ();
     process ( clock, result )
     begin
         if ( clock'event and clock = '1' ) then
-            saida <= result;
-				-- Fim de algoritmo mostra o resultado e indica fim de algoritmo
+            -- Fim de algoritmo mostra o resultado e indica fim de algoritmo
             if ( end_alg = '1' ) then
                 LED_alg <= '1'; 
 					 saida_LED <= result;
