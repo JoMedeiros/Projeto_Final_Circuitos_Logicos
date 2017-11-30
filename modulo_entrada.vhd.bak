@@ -1,0 +1,18 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+--  Módulo de entrada de operação 
+ENTITY Modulo_entrada IS	
+	PORT (Switches:		IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+			Reset :			IN STD_LOGIC;
+			Operar :			IN STD_LOGIC;
+			Validar :		IN STD_LOGIC;
+			Operacao:		IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			
+			clk: 				IN STD_LOGIC;									-- Clock
+			
+			Clear:			OUT STD_LOGIC;
+			Executar:		OUT STD_LOGIC;
+			Valor:			OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+			
+END;		
